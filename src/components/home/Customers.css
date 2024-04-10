@@ -11,6 +11,7 @@ body {
 }
 
 .parent-heading-container {
+  padding: 4px;
   width: auto;
   display: flex;
   flex-direction: column;
