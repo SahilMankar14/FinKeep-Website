@@ -1,0 +1,83 @@
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.advantage-container {
+  padding-top: 6rem;
+  display: flex;
+}
+
+.accountant-img-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accountant-image {
+  width: 500px;
+}
+
+.advantage-content-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage-content-title {
+  color: black;
+  font-size: 2.1vw;
+  font-weight: 300;
+}
+
+.advantage-title-underline {
+  width: 25vw;
+  border: 2px #062d50 solid;
+}
+
+.advantages {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage-title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.6vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.advantage-description {
+  padding: 0.6rem 1.2rem;
+  width: 80%;
+  color: #808080;
+  font-family: Poppins;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .advantage-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantage-description-container {
+    display: flex;
+  }
+  .advantage-title {
+    width: 50%;
+  }
+  .advantage-description {
+    width: 50%;
+  }
+}

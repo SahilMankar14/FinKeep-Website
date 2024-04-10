@@ -1,0 +1,112 @@
+.body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-container {
+  color: white;
+  padding: 4rem 14rem;
+  background-color: white;
+  background-color: #f8f9fd;
+  display: flex;
+}
+
+.contact-address {
+  padding: 1.5rem;
+  width: 30%;
+  background-color: #062d50;
+}
+
+.address-title {
+  font-size: 2vw;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.address-message {
+  font-size: 1vw;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+.address-details {
+  margin-bottom: 2rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon-container {
+  padding: 0.6rem;
+  border: 1px solid white;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+.address-icon {
+  width: 20%;
+  width: 25px;
+  height: 25px;
+}
+
+.address-description {
+  width: 80%;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+.light-line {
+  font-weight: 200;
+}
+
+.contact-form-container {
+  padding: 1.5rem;
+  color: black;
+  background-color: white;
+  width: 70%;
+  /* box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25); */
+}
+
+.contact-form-title {
+  font-size: 2vw;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.name-email {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-container {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.input-container label {
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+
+.input-container input {
+  width: 100%;
+  padding-bottom: 5px;
+  color: #808080;
+  border-bottom: 1px solid #d9d9d9;
+  outline: none;
+  font-size: 0.9vw;
+  font-weight: 300;
+}
+
+.contact-btn {
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  font-size: 0.9vw;
+  color: white;
+  background-color: #062d50;
+}

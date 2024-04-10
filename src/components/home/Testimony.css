@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.testimony-container {
+  box-sizing: border-box;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header section */
+.testimony-head {
+  margin: 32px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimony-heading {
+  color: black;
+  font-size: 34px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.testimony-heading-line {
+  width: 220px;
+  border: 2px #062d50 solid;
+}
+
+/* Body section */
+.testimony-body {
+  width: 80%;
+  padding: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 340px 340px;
+  gap: 20px;
+}
+
+.testimony-content {
+  padding: 16px;
+}
+
+/* Grid Area Distribution*/
+.testimony-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #733fc8;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.testimony-2 {
+  background-color: #49556b;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.testimony-3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.testimony-4 {
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.testimony-5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: #18202d;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Content Styling */
+.name-img-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.testimony-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+/* ----Testimony 1----  */
+/* Font & Color */
+.testimony1-name {
+  color: #cccbcf;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimony1-profession {
+  color: #9d82cb;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.testimony1-review {
+  color: #f3deff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimony1-discription {
+  color: #b18ce3;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ----Testimony 2----  */
+.testimony2-name {
+  color: #cfcfcf;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimony2-profession {
+  color: #818895;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.testimony2-review {
+  color: #f3deff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimony2-discription {
+  color: #9a96b1;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* ----Testimony 3----  */
+.testimony3-name,
+.testimony4-name {
+  color: #49505a;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimony3-profession,
+.testimony4-profession {
+  color: Chartered Accountant;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.testimony3-review,
+.testimony4-review {
+  color: #595959;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimony3-discription,
+.testimony4-discription {
+  color: #8c8c8c;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* ----Testimony 5----  */
+.testimony5-name {
+  color: #c7c7c8;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimony5-profession {
+  color: #61666d;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.testimony5-review {
+  color: #f3deff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimony5-discription {
+  color: #7a758b;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
