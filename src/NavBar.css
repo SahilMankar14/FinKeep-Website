@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
 
 .navbar-container {
   width: 100%;
@@ -41,7 +44,6 @@
 .menu-text {
   color: black;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   word-wrap: break-word;
@@ -71,7 +73,7 @@
 
 .get-started-button {
   box-sizing: border-box;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: #0a5ac2;
   border-radius: 0.625rem;
   display: flex;
@@ -88,4 +90,39 @@
   font-weight: 600;
   font-style: normal;
   word-wrap: break-word;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-items-container {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .menu-items-container.menu-open {
+    display: flex; /* Display menu items when menu is open */
+  }
+
+  .navbar-inner {
+    flex-direction: column;
+  }
+
+  .menu-btn {
+    display: flex;
+    padding: 12px;
+    align-self: flex-start;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-btn:focus {
+    outline: none; /*Remove focus outline */
+  }
 }

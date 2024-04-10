@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.services-main-container {
+body {
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+}
+
+.services-main-container {
   padding-top: 6rem;
   display: flex;
 }
@@ -25,7 +28,6 @@
 
 .content-title {
   color: #024294;
-  font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -33,7 +35,6 @@
 
 .content-subtitle {
   color: #000;
-  font-family: Poppins;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -50,13 +51,11 @@
 }
 
 .title-description-container {
-  box-sizing: border-box;
   padding-left: 2rem;
 }
 
 .service-title {
   color: #000;
-  font-family: Poppins;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -64,7 +63,6 @@
 
 .service-description {
   color: #808080;
-  font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -83,4 +81,51 @@
 .service-icon {
   height: 4rem;
   width: 4rem;
+}
+
+@media (max-width: 768px) {
+  .services-main-container {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .tally-img-container {
+    width: 100%;
+  }
+
+  .services-content-container {
+    width: 100%;
+  }
+
+  .content-title {
+    align-self: center;
+  }
+
+  .content-subtitle {
+    align-self: center;
+    font-size: 26px;
+    margin-left: 16px;
+  }
+
+  .title-description-container {
+    padding-left: 1rem;
+  }
+  .service-title {
+    font-size: 16px;
+  }
+
+  .service-description {
+    font-size: 10px;
+  }
+
+  .service-icon-container {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 14px;
+  }
+
+  .service-icon {
+    height: 2rem;
+    width: 2rem;
+  }
 }

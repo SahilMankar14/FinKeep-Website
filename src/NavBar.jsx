@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import { HiOutlineMenu } from "react-icons/hi";
 
 const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState();
+
+  const handleMenuClick = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const handleClick = () => {
     console.log("Button Clicked");
   };
@@ -12,7 +19,7 @@ const NavBar = () => {
         <div className="logo-container">
           <img src="/finkeep_logo.png" alt="Description of the image" />
         </div>
-        <div className="menu-items-container">
+        <div className={`menu-items-container ${menuOpen ? "menu-open" : ""}`}>
           <div className="menu-item">
             <Link to="/" className="menu-text">
               Home
@@ -39,6 +46,11 @@ const NavBar = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="menu-btn">
+        <button onClick={handleMenuClick}>
+          <HiOutlineMenu />
+        </button>
       </div>
     </div>
   );
