@@ -31,11 +31,11 @@
 
 /* Body section */
 .testimony-body {
-  width: 80%;
+  width: 90%;
   padding: 6px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 340px 340px;
+  grid-auto-rows: minmax(200px, auto);
   gap: 20px;
 }
 

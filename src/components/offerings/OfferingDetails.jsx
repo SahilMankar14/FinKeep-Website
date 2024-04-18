@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./OfferingDetails.css";
+import ModalWindow from "./ModalWindow";
+
 const OfferingDetails = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSowButtonClick = () => {
+    // Construct the URL of the file in the public folder
+    const filePath = "/SOW Finkeep.docx"; // Adjust the file path and name as needed
+
+    // Create a link element
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = "SOW Finkeep.docx"; // Adjust the file name as needed
+
+    // Append the link to the body
+    document.body.appendChild(link);
+
+    // Trigger the download
+    link.click();
+
+    // Clean up
+    document.body.removeChild(link);
+  };
+
+  const handleGetQuoteButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="offerings-container">
       {/* -----Anual Accounting------ */}
@@ -30,18 +61,27 @@ const OfferingDetails = () => {
           </div>
         </div>
         <div className="offering-btns">
-          <button className="offering-btn" id="btn-1">
+          <button
+            className="offering-btn"
+            id="btn-1"
+            onClick={handleSowButtonClick}
+          >
             SOW
           </button>
-          <button className="offering-btn" id="btn-2">
+          <button
+            className="offering-btn"
+            id="btn-2"
+            onClick={handleGetQuoteButtonClick}
+          >
             Get a Quote
           </button>
         </div>
+        <ModalWindow open={isModalOpen} onClose={handleCloseModal} />
       </div>
       {/* -----Periodical Accounting------ */}
       <div className="offering">
         <div className="offering-img-container">
-          <img src="/annual_accounting.jpg" alt="annual accounting" />
+          <img src="/periodical_accounting.jpg" alt="annual accounting" />
         </div>
         <div className="offering-container">
           <div className="offering-title">PERIODICAL ACCOUNTING</div>
@@ -60,7 +100,11 @@ const OfferingDetails = () => {
           </div>
         </div>
         <div className="offering-btns">
-          <button className="offering-btn" id="btn-1">
+          <button
+            className="offering-btn"
+            id="btn-1"
+            onClick={handleSowButtonClick}
+          >
             SOW
           </button>
           <button className="offering-btn" id="btn-2">
@@ -71,7 +115,7 @@ const OfferingDetails = () => {
       {/* -----Clean Up Accounting------ */}
       <div className="offering">
         <div className="offering-img-container">
-          <img src="/annual_accounting.jpg" alt="annual accounting" />
+          <img src="/clean_up_accounting.jpg" alt="annual accounting" />
         </div>
         <div className="offering-container">
           <div className="offering-title">CLEAN UP ACCOUNTING</div>
@@ -90,7 +134,11 @@ const OfferingDetails = () => {
           </div>
         </div>
         <div className="offering-btns">
-          <button className="offering-btn" id="btn-1">
+          <button
+            className="offering-btn"
+            id="btn-1"
+            onClick={handleSowButtonClick}
+          >
             SOW
           </button>
           <button className="offering-btn" id="btn-2">
@@ -101,7 +149,7 @@ const OfferingDetails = () => {
       {/* -----INTEGRATION AND MIS REPORTING------ */}
       <div className="offering">
         <div className="offering-img-container">
-          <img src="/annual_accounting.jpg" alt="annual accounting" />
+          <img src="/mis_report.jpg" alt="annual accounting" />
         </div>
         <div className="offering-container">
           <div className="offering-title">INTEGRATION AND MIS REPORTING</div>
@@ -121,7 +169,11 @@ const OfferingDetails = () => {
           </div>
         </div>
         <div className="offering-btns">
-          <button className="offering-btn" id="btn-1">
+          <button
+            className="offering-btn"
+            id="btn-1"
+            onClick={handleSowButtonClick}
+          >
             SOW
           </button>
           <button className="offering-btn" id="btn-2">

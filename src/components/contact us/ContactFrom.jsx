@@ -28,7 +28,7 @@ const ContactFrom = () => {
           <div className="icon-container">
             <img src="/Phone icon.png" alt="Phone" className="address-icon" />
           </div>
-          <div className="address-description">Phone: +91 9823197963</div>
+          <div className="address-description">Phone: +91 9823197963</div>
         </div>
         <div className="address-details">
           <div className="icon-container">
@@ -38,7 +38,7 @@ const ContactFrom = () => {
               className="address-icon"
             />
           </div>
-          <div className="address-description">Email: sales@finkeep.in</div>
+          <div className="address-description">Email: sales@finkeep.in</div>
         </div>
         <div className="address-details">
           <div className="icon-container">
@@ -48,7 +48,7 @@ const ContactFrom = () => {
               className="address-icon"
             />
           </div>
-          <div className="address-description">Website: finkeep.in</div>
+          <div className="address-description">Website: finkeep.in</div>
         </div>
       </div>
       <div className="contact-form-container">

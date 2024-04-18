@@ -7,6 +7,10 @@ body {
   width: 100%;
   box-sizing: border-box;
   padding: 0.625rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +47,7 @@ body {
 
 .menu-text {
   color: black;
-  font-size: 16px;
+  font-size: 1.25vw;
   font-weight: 600;
   font-style: normal;
   word-wrap: break-word;
@@ -85,7 +89,7 @@ body {
 .button-text {
   width: 120px;
   color: white;
-  font-size: 16px;
+  font-size: 1.25vw;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;

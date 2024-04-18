@@ -16,9 +16,9 @@ const NavBar = () => {
   return (
     <div className="navbar-container">
       <div className="navbar-inner">
-        <div className="logo-container">
+        <Link to="/" className="logo-container">
           <img src="/finkeep_logo.png" alt="Description of the image" />
-        </div>
+        </Link>
         <div className={`menu-items-container ${menuOpen ? "menu-open" : ""}`}>
           <div className="menu-item">
             <Link to="/" className="menu-text">
